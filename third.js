@@ -1,13 +1,13 @@
 // 시중에서 판매중인 차량 스펙
 var carSpecs = {
-  car1: { 항목: ['dkssud', 2, 3, 4, 5, 6] },
-  car2: { 항목: [11, 12, 13, 14, 15, 16] },
-  car3: { 항목: [21, 22, 23, 24, 25, 26] },
-  car4: { 항목: [31, 32, 33, 34, 35, 36] },
+  car1: { 항목: ['테슬라', 2, 3, 4, 5, 6] },
+  car2: { 항목: ['그렇디', 12, 13, 14, 15, 16] },
+  car3: { 항목: ['ㅁㅁ', 22, 23, 24, 25, 26] },
+  car4: { 항목: ['ㄴㅇㄹ', 32, 33, 34, 35, 36] },
   car5: { 항목: [41, 42, 43, 44, 45, 46] },
   car6: { 항목: [51, 52, 53, 54, 55, 56] },
   car7: { 항목: [61, 62, 63, 64, 65, 66] },
-  car8: { 항목: [71, 72, 73, 74, 75, 76] },
+  car8: { 항목: ['ㅇ', 72, 73, 74, 75, 76] },
 };
 
 // 모델 I 스펙
@@ -15,14 +15,14 @@ var modelISpecs = { 항목: [91, 92, 93, 94, 95, 96] };
 
 // 시중에서 판매중인 차량 이미지
 var carImages = {
-  car1: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE12LHS9UK7axlWIVM6yKkZTYtroeOgcrEkA&usqp=CAU',
-  car2: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE12LHS9UK7axlWIVM6yKkZTYtroeOgcrEkA&usqp=CAU',
-  car3: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE12LHS9UK7axlWIVM6yKkZTYtroeOgcrEkA&usqp=CAU',
-  car4: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE12LHS9UK7axlWIVM6yKkZTYtroeOgcrEkA&usqp=CAU',
-  car5: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE12LHS9UK7axlWIVM6yKkZTYtroeOgcrEkA&usqp=CAU',
-  car6: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE12LHS9UK7axlWIVM6yKkZTYtroeOgcrEkA&usqp=CAU',
-  car7: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE12LHS9UK7axlWIVM6yKkZTYtroeOgcrEkA&usqp=CAU',
-  car8: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE12LHS9UK7axlWIVM6yKkZTYtroeOgcrEkA&usqp=CAU',
+  car1: 'https://github.com/Yoon0221/capston/assets/108733746/1867c087-1e72-4965-a9cb-b37ebec5dde4',
+  car2: 'https://github.com/Yoon0221/capston/assets/108733746/2f94708e-f952-40b2-a9f1-da41fb8d75b2',
+  car3: 'https://github.com/Yoon0221/capston/assets/108733746/da4a1ac0-73f9-44b6-8c3c-f7ef090235b4',
+  car4: 'https://github.com/Yoon0221/capston/assets/108733746/f49abdb5-3543-438d-9459-05f1f5abb195',
+  car5: 'https://github.com/Yoon0221/capston/assets/108733746/212c914d-f81e-4d42-b0e0-73c473cfe317',
+  car6: 'https://github.com/Yoon0221/capston/assets/108733746/7cd0b396-30ef-4937-ac23-40c193882729',
+  car7: 'https://github.com/Yoon0221/capston/assets/108733746/b71e5fb7-e21a-400a-92f5-0c404b16e9d1',
+  car8: 'https://github.com/Yoon0221/capston/assets/108733746/39447e53-42f8-4da9-9095-cdcbcc0ac6e4',
 };
 
 // 임시 저장 배열 선언
