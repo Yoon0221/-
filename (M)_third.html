@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="third.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv"
+      crossorigin="anonymous"
+    />
+    <title>모델 I 홈페이지 - 타 차량과의 비교</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <a href="(M)_index.html">
+          <img
+            src="https://blog.kakaocdn.net/dn/cpDZ8c/btqyG77Sc1o/Q2KKUIyCWIzGQfK1fPSeok/img.jpg"
+            alt="Logo"
+            class="logo"
+          />
+        </a>
+
+        <nav class="gnb">
+          <ul>
+            <li>
+              <a href="(M)_third.html" id="resetButton">타 차량과의 비교</a>
+              <div class="gnb_inner">
+                <ul class="depth1_list">
+                  <li>
+                    <ul class="depth2_list">
+                      <li>
+                        <p>
+                          다른 차량과 모델 I를 비교할 수 있는 페이지입니다.
+                          <br /><br />
+                          로그인시, 내 차량과 비교하기 기능도 체험해 볼 수
+                          있습니다.
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="login-btn"><a href="MyPage.html">마이페이지</a></button>
+      </div>
+    </header>
+
+    <br /><br /><br /><br />
+
+    <!-- 무료 섹션 -->
+    <section id="comparison-section">
+      <button onclick="toggleSection('comparison-content', this)">
+        더보기
+      </button>
+      <h1 id="pageTitle">무료 기능</h1>
+      <p style="text-align: center">
+        모델 I와 시중의 다른 차량을 비교할 수 있습니다.
+      </p>
+      <br /><br /><br />
+      <div id="comparison-content" style="display: block">
+        <p style="text-align: center">비교를 원하는 차량을 선택해주세요.</p>
+        <br />
+
+        <!-- 차량 선택 목록 -->
+        <div class="car-banner">
+          <div class="car-option" onclick="selectCar('car1')">
+            <img
+              class="car-image"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE12LHS9UK7axlWIVM6yKkZTYtroeOgcrEkA&usqp=CAU"
+              ;
+              alt="차량 1"
+            />
+            <div class="car-name">차량 1</div>
+          </div>
+          <div class="car-option" onclick="selectCar('car2')">
+            <img
+              class="car-image"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE12LHS9UK7axlWIVM6yKkZTYtroeOgcrEkA&usqp=CAU"
+              alt="차량 2"
+            />
+            <div class="car-name">차량 2</div>
+          </div>
+          <div class="car-option" onclick="selectCar('car3')">
+            <img
+              class="car-image"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE12LHS9UK7axlWIVM6yKkZTYtroeOgcrEkA&usqp=CAU"
+              alt="차량 3"
+            />
+            <div class="car-name">차량 3</div>
+          </div>
+          <div class="car-option" onclick="selectCar('car4')">
+            <img
+              class="car-image"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE12LHS9UK7axlWIVM6yKkZTYtroeOgcrEkA&usqp=CAU"
+              alt="차량 4"
+            />
+            <div class="car-name">차량 4</div>
+          </div>
+          <div class="car-option" onclick="selectCar('car5')">
+            <img
+              class="car-image"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE12LHS9UK7axlWIVM6yKkZTYtroeOgcrEkA&usqp=CAU"
+              alt="차량 5"
+            />
+            <div class="car-name">차량 5</div>
+          </div>
+          <div class="car-option" onclick="selectCar('car6')">
+            <img
+              class="car-image"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE12LHS9UK7axlWIVM6yKkZTYtroeOgcrEkA&usqp=CAU"
+              alt="차량 6"
+            />
+            <div class="car-name">차량 6</div>
+          </div>
+          <div class="car-option" onclick="selectCar('car7')">
+            <img
+              class="car-image"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE12LHS9UK7axlWIVM6yKkZTYtroeOgcrEkA&usqp=CAU"
+              alt="차량 7"
+            />
+            <div class="car-name">차량 7</div>
+          </div>
+          <div class="car-option" onclick="selectCar('car8')">
+            <img
+              class="car-image"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE12LHS9UK7axlWIVM6yKkZTYtroeOgcrEkA&usqp=CAU"
+              alt="차량 8"
+            />
+            <div class="car-name">차량 8</div>
+          </div>
+        </div>
+
+        <!--// 차량 선택 목록 -->
+
+        <!-- 스펙 비교 표 -->
+        <div id="selectedCar"></div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <h2 style="text-align: center">스펙 비교</h2>
+
+        <div id="comparison-header">
+          <img
+            id="carImage"
+            src="data:image/png;base64,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"
+            alt="Car Image"
+            width="200"
+            height="150"
+          />
+
+          <h1 id="vs-label">vs</h1>
+
+          <img
+            id="comparison-image"
+            src="https://github.com/Yoon0221/capston/assets/108733746/07d0028a-a3e5-4e3d-a543-52ca5e251a7e"
+            alt="모델 I Image"
+            width="300"
+            height="200"
+          />
+        </div>
+        <br /><br />
+
+        <table border="1" id="comparison-table">
+          <tr>
+            <th>항목</th>
+            <th id="selected-car-spec">선택된 차량</th>
+            <th>모델 I</th>
+          </tr>
+          <tr>
+            <td>모델명</td>
+            <td>내 차량</td>
+            <td>모델 I</td>
+          </tr>
+          <tr>
+            <td>전비</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>주행거리</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>차량 비용</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>1일 기준 비용</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>1년 기준 비용</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <!--// 스펙 비교 표 -->
+    <!--// 무료 섹션 -->
+
+    <!-- 회원기능 - 내 차와 비교하기 섹션 -->
+    <section id="user-comparison-section">
+      <button onclick="toggleSection('user-comparison-content', this)">
+        더보기
+      </button>
+      <h1 id="pageTitle">회원 기능</h1>
+      <p style="text-align: center">
+        모델 I와 회원님의 차량을 비교할 수 있습니다.
+      </p>
+      <br /><br />
+      <div id="user-comparison-content" style="display: block">
+        <p style="text-align: center">
+          비교를 원하는 차량을 선택해주세요.<br />최대 3개의 대표차량까지
+          비교기능을 지원합니다.
+        </p>
+
+        <br />
+        <!-- 차량 선택 목록 -->
+        <div class="user-car-options">
+          <div class="user-car-option" onclick="loadUserInfos(1)">
+            <h3>1번 차량 선택</h3>
+            <div id="arrayValues"></div>
+          </div>
+          <div class="user-car-option" onclick="loadUserInfos(2)">
+            <h3>2번 차량 선택</h3>
+          </div>
+          <div class="user-car-option" onclick="loadUserInfos(3)">
+            <h3>3번 차량 선택</h3>
+          </div>
+        </div>
+        <div
+          class="user-car-option"
+          onclick="refreshTable()"
+          id="cancel-button"
+        >
+          <h3>차량 선택 취소</h3>
+        </div>
+
+        <!--// 차량 선택 목록 -->
+
+        <!-- 스펙 비교 표 -->
+        <div id="selectedCar"></div>
+        <br />
+        <br />
+
+        <h2 style="text-align: center">스펙 비교</h2>
+        <div id="comparison-header">
+          <img
+            id="userImage"
+            src="data:image/png;base64,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"
+            alt="User Image"
+            width="200"
+            height="150"
+          />
+
+          <h1 id="vs-label">vs</h1>
+
+          <img
+            id="comparison-image"
+            src="https://github.com/Yoon0221/capston/assets/108733746/07d0028a-a3e5-4e3d-a543-52ca5e251a7e"
+            alt="Comparison Image"
+            width="300"
+            height="200"
+          />
+        </div>
+        <br />
+        <br />
+
+        <table border="1" id="user-comparison-table">
+          <tr>
+            <th>항목</th>
+            <th id="selected-car-spec">선택된 차량</th>
+            <th>모델 I</th>
+          </tr>
+          <tr>
+            <td>모델명</td>
+            <td>내 차량</td>
+            <td>모델 I</td>
+          </tr>
+          <tr>
+            <td>전비</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>주행거리</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>차량 비용</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>1일 기준 비용</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>1년 기준 비용</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <!--// 스펙 비교 표 -->
+    <!--// 회원기능 - 내 차와 비교하기 섹션 -->
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <!-- footer -->
+
+    <footer class="child">
+      <!-- container -->
+      <div class="container">
+        <br /><br /><br />
+        <div class="companyName">Model I (모델 Inha)</div>
+        <br />
+        <br />
+        <br /><br /><br />
+        <ul class="depth1 clearfix">
+          <li>
+            <em><a href="(M)_first.html">모델 I 탄생배경</a></em>
+          </li>
+          <li>
+            <em><a href="(M)_second.html"><모델 I></a></em>
+          </li>
+          <li>
+            <em><a href="(M)_third.html">타 차량과의 비교</a></em>
+          </li>
+        </ul>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <!-- container -->
+    </footer>
+    <!-- //footer -->
+
+    <div class="top">
+      <a href="">TOP</a>
+    </div>
+
+    <script src="top.js"></script>
+    <script src="main.js"></script>
+    <script src="LogIn.js"></script>
+    <script src="third.js"></script>
+  </body>
+</html>

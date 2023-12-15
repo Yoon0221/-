@@ -1,0 +1,134 @@
+body {
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.5s ease;
+}
+
+/* func */
+.funcs {
+  text-align: center;
+}
+
+/* main - 1 */
+#home {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+}
+
+#home h1 {
+  color: #333;
+}
+
+#home img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#home p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* other main */
+
+.containers {
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+canvas {
+  margin-top: 20px;
+}
+h1,
+h2,
+p {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.section {
+  display: block;
+}
+
+#chart-containers {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+rect {
+  fill: red;
+}
+
+#result {
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.driving {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.regenerative {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.stopped {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+#motorControl {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#torqueInput {
+  width: calc(100% - 20px);
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.icon {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.icon-error {
+  color: #e74c3c;
+}
+
+.icon-success {
+  color: #4caf50;
+}

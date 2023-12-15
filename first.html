@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="first.css" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv"
+      crossorigin="anonymous"
+    />
+    <title>모델 I 홈페이지 - 모델 I 탄생배경</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <!-- Logo Image -->
+        <a href="index.html">
+          <img
+            src="https://blog.kakaocdn.net/dn/cpDZ8c/btqyG77Sc1o/Q2KKUIyCWIzGQfK1fPSeok/img.jpg"
+            alt="Logo"
+            class="logo"
+          />
+        </a>
+
+        <!--// Logo Image -->
+
+        <nav class="gnb">
+          <ul>
+            <li>
+              <a href="first.html" id="resetButton">모델 I 탄생배경</a>
+              <div class="gnb_inner">
+                <ul class="depth1_list">
+                  <li>
+                    <ul class="depth2_list">
+                      <li>
+                        <p>
+                          모델 I가 탄생한 배경에 대한 페이지입니다.
+                          <br /><br />전기자동차의 장점과 모델 I만의 특성을 알
+                          수 있습니다.
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Member Button -->
+        <button class="login-btn"><a href="LogIn.html">로그인</a></button>
+        <!--// Member Button -->
+      </div>
+    </header>
+
+    <div class = "funcs">
+    <main>
+<br/><br/><br/><br/><br/>
+<section id="main-section">
+
+  <section>
+    <!-- 1. 모델 I 탄생배경 - 이론1 -->
+    <div id="motorControl" class="section">
+      <h1>모터 구동 및 회생 제동 제어</h1><br/><br/>
+      <label for="torqueInput">토크 값 입력 :</label><br/>
+      <input type="number" id="torqueInput" placeholder="토크 값을 입력하세요" /><br/>
+      <button onclick="controlMotor()">제어</button>
+      <br/><br/><br/>
+      <div id="result"></div>
+    </div>
+  </section>
+  <section>
+    <br/><br/><br/><br/><br/><br/>
+    <!-- 2. 모델 I 탄생배경 - 이론2 -->
+    <div id="hydraulicSimulation" class="section">
+      <h2>회생제동과 유압제동 비율 조절</h2><br/><br/>
+      <label for="regenRatio">회생제동 비율:</label>
+      <div class="input-container">
+        <input type="range" id="regenRatio" min="0" max="100" value="50" />
+        <span id="regenValue">50%</span>
+      </div>
+      <br/>
+      <label for="hydraulicRatio">유압제동 비율:</label>
+      <div class="input-container">
+        <input type="range" id="hydraulicRatio" min="0" max="100" value="50" />
+        <span id="hydraulicValue">50%</span>
+      </div>
+      <br/>
+      <div id="result">전비 값: <span id="gearRatio">1.00</span></div>
+    </div>
+  </section>
+
+
+      <br/><br/><br/><br/><br/><br/>
+      <section id="main - section">
+        
+      <!-- 3. 모델 I 탄생배경 - 이론3-->
+      <div class="containers">
+        <h1>주행 특성 비교 및 전비 개선 시뮬레이션</h1><br/>
+        <canvas id="myChart" width="400" height="200"></canvas>
+        <div id="result" style="margin-top: 20px"></div>
+  
+      </div>
+      </section>
+
+      <br/><br/><br/><br/>
+
+       <!-- 4. 모델 I 탄생배경 - 이론4-->
+       <section id="main - section">
+        
+       <h1>모터 효율 분석 및 개선</h1><br/><br/><br/>
+
+      <h2>1. 회생 제동과 유압 제동</h2><br/>
+      <p>
+        회생 제동은 모터가 회전 에너지를 다시 전원 공급망으로 돌려보내어
+        에너지를 재활용하는 기술입니다. <br/>유압 제동은 유압 시스템을 이용하여
+        모터의 속도를 제어하는 기술입니다. <br/>두 기술을 효율적으로 조합하면
+        모터의 에너지 흐름을 최적화할 수 있습니다.
+      </p><br/><br/>
+
+      <h2>2. 모터 효율에 대한 분석</h2><br/>
+      <p>
+        모터 효율은 회전 에너지를 유용한 작업으로 변환하는 능력을 나타냅니다.<br/>
+        효율을 높이기 위해서는 회생 제동과 유압 제동의 비율을 조정해야 합니다.<br/>
+        불필요한 에너지 손실을 방지하고, 모터가 효과적으로 일을 수행하도록
+        최적의 환경을 조성해야 합니다.
+      </p><br/><br/>
+
+      <h2>3. 개선 방향 제시</h2><br/>
+      <p>
+        3.1 <strong>회생 제동과 유압 제동 비율 조정 <br/>  </strong>
+      </p>
+      <p>
+        3.2 <strong>센서 및 제어 시스템 강화 <br/> </strong>
+      </p>
+      <p>
+        3.3 <strong>고효율 재생 에너지 시스템 도입 <br/> </strong> 
+      </p>
+      <br/>
+      <p>
+        위의 방안들을 종합적으로 적용함으로써, 모터 시스템의 효율을 향상시키고
+        에너지 소비를 최적화할 수 있습니다.
+      </p>
+       </section>
+
+       <br/><br/><br/><br/><br/><br/>
+
+       <!-- 5. 모델 I 탄생배경 - 이론5-->
+       <section id="main - section">
+       
+       <h2>4. 비율 변화에 따른 시뮬레이션 결과 분석</h2>
+       <div id="chart-containers">
+         <svg width="600" height="400"></svg>
+         <label for="recoveryRatio">회생제동 분배비율: </label>
+         <input
+           type="range"
+           id="recoveryRatio"
+           min="0"
+           max="100"
+           step="1"
+           value="50"
+         />
+         <p id="errorLabel">오차율: <span id="errorValue">0</span>%</p>
+       </div>
+ 
+       <script src="https://d3js.org/d3.v5.min.js"></script>
+     </div>
+   </div>
+  </section>
+
+        <br/><br/><br/><br/><br/><br/>
+
+        <!-- 6. 모델 I 매력-->
+        <section id="main - section">
+          
+        <section id="appeal">
+          <h2>소비자에게 Model I의 매력 알리기</h2><br/><br/>
+          <p>
+            <strong>모델 I의 탄생 배경 </strong> : 환경 정책 변화와 소비자 요구 부응을 위해 개발. 친환경, 경제성, 성능 향상을 목표로 함.
+          </p>
+          <p>
+            <strong>  모델 I의 특장점 </strong> : 낮은 가격, 개선된 주행거리, 환경 친화성으로 중산층 소비자에게 매력적인 선택지.
+          </p>
+          <p>
+            <strong>소비자 혜택 및 경쟁력 강조 </strong> : 가격, 주행거리로 경쟁력을 부각하며 세부 기술적 특징과 경쟁력 강조.
+          </p>
+      </section>
+
+         <br/><br/><br/><br/><br/><br/>
+
+         <!-- 7. 마무리 -->
+         <section id="strategy">
+          <h2>지속 가능성 및 차후 전략</h2><br/>
+          <p>
+            <strong>시장 전망 및 대응 방안 </strong> : 친환경 정책 확대에 따른 전기차 시장 성장 전망, 미래 기술 도입 및 업그레이드로 경쟁 우위 유지.
+          </p>
+          <p>
+            <strong>소비자 교육 및 마케팅 전략 </strong> : Model I의 혜택을 명확하게 전달하기 위한 마케팅 전략 수립, 전기차의 장점과 Model I의 특징 강조하는 교육 프로그램 개발.
+          </p>
+          <p>
+            <strong>지속 가능성 및 확장 전략 </strong> : 환경 친화성 및 저가격 전략을 통한 차후 시장 공략, 지속 가능한 기술 발전 및 시장 확장을 위한 비전 수립.
+          </p>
+      </section>
+      <br/><br/><br/><br/> <br/><br/><br/>
+      <section id="conclusion">
+        <h2>마무리</h2><br/>
+        <p>
+          <strong>  Model I </strong> : 환경 친화성, 경제성, 성능 향상을 고려하여 개발된 친환경 전기차.
+        </p><br/>
+        <p>
+            소비자에게 제공하는 저렴한 가격과 향상된 주행거리로 시장에서의 강력한 경쟁력 확보.
+        </p><br/>
+        <p>
+            끊임없는 연구와 개발을 통해 미래의 전기차 시장을 선도하는 역할을 수행할 것임을 약속드립니다.
+        </p>
+    </section>
+       
+        </div>
+
+      </section>
+    </main>
+    <br/><br/><br/><br/><br/><br/>
+    <!-- footer -->
+
+    <footer class="child">
+      <!-- container -->
+      <div class="container">
+        <br /><br /><br />
+        <div class="companyName">Model I (모델 Inha)</div>
+        <br />
+        <br />
+        <br /><br /><br />
+        <ul class="depth1 clearfix">
+          <li>
+            <em><a href="first.html">모델 I 탄생배경</a></em>
+          </li>
+          <li>
+            <em><a href="second.html"><모델 I></a></em>
+          </li>
+          <li>
+            <em><a href="third.html">타 차량과의 비교</a></em>
+          </li>
+        </ul>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <!-- container -->
+    </footer>
+    <!-- //footer -->
+
+    <div class="top">
+      <a href="">TOP</a>
+    </div>
+
+    <script src="top.js"></script>
+    <script src="first.js"></script>
+    <script src="main.js"></script>
+    
+  </body>
+</html>

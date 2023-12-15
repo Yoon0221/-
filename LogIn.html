@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="LogIn.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv"
+      crossorigin="anonymous"
+    />
+    <title>모델 I 홈페이지 - 로그인</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <!-- Logo Image -->
+        <a href="index.html">
+          <img
+            src="https://blog.kakaocdn.net/dn/cpDZ8c/btqyG77Sc1o/Q2KKUIyCWIzGQfK1fPSeok/img.jpg"
+            alt="Logo"
+            class="logo"
+          />
+        </a>
+
+        <!--// Logo Image -->
+
+        <nav class="gnb">
+          <ul>
+            <li>
+              <a href="LogIn.html" id="resetButton">로그인</a>
+              <div class="gnb_inner">
+                <ul class="depth1_list">
+                  <li>
+                    <ul class="depth2_list">
+                      <li>
+                        <p>
+                          로그인 페이지입니다.
+                          <br /><br />로그인, 회원가입 기능을
+                          지원합니다.
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Member Button -->
+        <button class="login-btn"><a href="LogIn.html">로그인</a></button>
+        <!--// Member Button -->
+      </div>
+    </header>
+    <br/> <br/> 
+    <br/> <br/>
+    <main>
+      
+      <section>
+        <h1 style="text-align: center;"> <로그인> </h1> <br/> <br/> 
+        <!-- 로그인 폼 -->
+        <form id="loginForm">
+          <label for="loginId">아이디:</label>
+          <input type="text" id="loginId" required /><br />
+
+          <label for="loginPassword">비밀번호:</label>
+          <input type="password" id="loginPassword" required /><br />
+
+          <button type="button" onclick="login()">로그인</button>
+        </form>
+
+        <!-- 로그인 성공/실패 메시지 창 -->
+        <div id="loginMessage" class="hidden"></div>
+      
+    </section>
+    </main>
+    <br/> <br/> <br/> <br/> <br/> <br/> 
+    <h1 style="text-align: center;"> <회원가입> </h1> <br/> <br/> 
+      <div id="signupLoginContent">
+        <!-- 회원가입 폼 -->
+        <form id="signupForm">
+          <label for="id">아이디:</label>
+          <input type="text" id="id" required />
+  
+          <label for="password">비밀번호:</label>
+          <input type="password" id="password" required />
+  
+          <label for="name">이름:</label>
+          <input type="text" id="name" required />
+  
+          <label for="age">나이:</label>
+          <input type="number" id="age" required />
+  
+          <label for="carCount">소지차량 개수:</label>
+          <input type="number" id="carCount" min="0" required />
+  
+          <button type="button" onclick="signup()">가입</button>
+        </form>
+
+           <!-- 차량 정보 기입 폼 -->
+           <div id="dynamicCarInfoContainer">
+            <br/></br/>
+      <div id="dynamicCarInfoForms">
+        <h3>-차량 정보 입력-</h3> <br/></br/>
+        <label for="model">모델:</label>
+        <input type="text" id="model" />
+
+        <label for="maintenance">전비:</label>
+        <input type="text" id="maintenance" />
+
+        <label for="carCost">주행 거리:</label>
+        <input type="number" id="carCost" />
+
+        <label for="dailyCost">차량 비용:</label>
+        <input type="number" id="dailyCost" />
+
+        <label for="monthlyCost">1일 기준 비용:</label>
+        <input type="number" id="monthlyCost" />
+
+        <label for="annualCost">1년 기준 비용:</label>
+        <input type="number" id="annualCost" />
+
+        <label for="carImage">차량 사진:</label>
+        <input type="url" id="carImage" />
+      </div>
+    </div>
+      <!-- 회원가입 성공/실패 메시지 창 -->
+      <div id="signupMessage" class="hidden"></div>
+    </div>
+ 
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+    <!-- footer -->
+
+    <footer class="child">
+      <!-- container -->
+      <div class="container">
+        <br /><br /><br />
+        <div class="companyName">Model I (모델 Inha)</div>
+        <br />
+        <br />
+        <br /><br /><br />
+        <ul class="depth1 clearfix">
+          <li>
+            <em><a href="first.html">모델 I 탄생배경</a></em>
+          </li>
+          <li>
+            <em><a href="second.html"><모델 I></a></em>
+          </li>
+          <li>
+            <em><a href="third.html">타 차량과의 비교</a></em>
+          </li>
+        </ul>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <!-- container -->
+    </footer>
+    <!-- //footer -->
+
+    <div class="top">
+      <a href="">TOP</a>
+    </div>
+
+    <script src="top.js"></script>
+    <script src="main.js"></script>
+    <script src="LogIn.js"></script>
+  </body>
+</html>

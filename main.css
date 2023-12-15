@@ -1,0 +1,284 @@
+/* header */
+header {
+  position: relative;
+  height: 70px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+header .logo {
+  width: 200px;
+  height: auto;
+}
+
+header .gnb > ul > li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+header .gnb > ul > li:hover > a {
+  border-bottom: 3px solid #043285;
+}
+
+header .gnb > ul > li > a {
+  display: inline-block;
+  height: 70px;
+  line-height: 70px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+header .gnb > ul > li > a:hover {
+  border-bottom: 3px solid #043285;
+}
+
+header .gnb > ul > li > a:hover + .gnb_inner {
+  display: block;
+}
+
+header .gnb .gnb_inner {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background-color: #ececec;
+  z-index: 2;
+  display: none;
+}
+
+header .gnb .gnb_inner:hover {
+  display: block;
+}
+
+header .gnb .gnb_inner .depth1_list {
+  width: 660px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 40px 0;
+}
+
+header .gnb .gnb_inner .depth1_list > li {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 60px;
+  padding-left: 60px;
+  height: 100%;
+}
+
+header .gnb .gnb_inner .depth1_list > li:first-child {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+header .gnb .gnb_inner .depth1_list > li:first-child:before {
+  display: none;
+}
+
+header .gnb .gnb_inner .depth1_list > li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background-color: #ccc;
+}
+
+header .gnb .gnb_inner .depth1_list > li > a {
+  display: block;
+  color: #1428a0;
+  font-weight: bold;
+  margin-bottom: 24px;
+  font-size: 18px;
+}
+
+header .gnb .gnb_inner .depth1_list .depth2_list_div {
+  float: left;
+  margin-right: 40px;
+}
+
+header .gnb .gnb_inner .depth1_list .depth2_list li {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+header
+  .gnb
+  .gnb_inner
+  .depth1_list
+  > li:first-child
+  .depth2_list
+  li:nth-child(1)
+  a {
+  color: #043285 !important;
+  font-weight: bold;
+}
+
+header
+  .gnb
+  .gnb_inner
+  .depth1_list
+  > li:first-child
+  .depth2_list
+  li:nth-child(2)
+  a {
+  color: #043285 !important;
+  font-weight: bold;
+}
+
+header .login-btn {
+  background-color: #1f71c4;
+  color: #ecf0f1;
+  padding: 12px 20px;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(38, 4, 160, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header .login-btn:hover {
+  background-color: #3498db;
+  color: #ecf0f1;
+}
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap');
+body {
+  font-family: 'Nanum Gothic';
+}
+
+/*reset 내용*/
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  letter-spacing: -0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blind {
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+/* footer */
+
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+footer.child {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer.child .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer.child .companyName {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+footer.child .depth1 {
+  list-style: none;
+}
+
+footer.child .depth1 li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer.child .depth1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer.child .depth1 a:hover {
+  text-decoration: underline;
+}
+
+footer.child .depth2 {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer.child em {
+  margin-right: 100px;
+}
+
+/* top */
+
+.top a {
+  position: fixed;
+  right: 100px;
+  bottom: 100px;
+  z-index: 100;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #000;
+  text-align: center;
+  line-height: 60px;
+  background-color: #fff;
+  display: none;
+}
+
+.top a.on {
+  display: block;
+}
+
+.animate {
+  transition: 5s ease-in-out;
+}
