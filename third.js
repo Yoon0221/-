@@ -11,7 +11,7 @@ var carSpecs = {
 };
 
 // 모델 I 스펙
-var modelISpecs = { 항목: ['모델 I', '499.7km', '5000만원'] };
+var modelISpecs = { 항목: ['모델 I', '567.8km', '5000만원'] };
 
 // 시중에서 판매중인 차량 이미지
 var carImages = {
