@@ -33,14 +33,23 @@ hydraulicSlider.addEventListener('input', updateDisplay);
 // 슬라이더 값 변경에 따라 화면 업데이트
 function updateDisplay() {
   // 슬라이더 값 가져오기
-  const regenRatio = regenSlider.value;
-  const hydraulicRatio = hydraulicSlider.value;
+  let regenRatio = regenSlider.value;
+  let hydraulicRatio = hydraulicSlider.value;
 
   // 비율 표시 업데이트
   regenValue.textContent = `${regenRatio}%`;
   hydraulicValue.textContent = `${hydraulicRatio}%`;
 
   // 전비 값 계산 및 표시
+  if (regenRatio + hydraulicRatio > 100) {
+    // 비율 합이 100을 초과하는 경우, 비율을 재조정
+    const totalRatio = parseFloat(regenRatio) + parseFloat(hydraulicRatio);
+    regenRatio = (regenRatio / totalRatio) * 100;
+    hydraulicRatio = (hydraulicRatio / totalRatio) * 100;
+    regenValue.textContent = `${regenRatio.toFixed(2)}%`;
+    hydraulicValue.textContent = `${hydraulicRatio.toFixed(2)}%`;
+  }
+
   const totalRatio = 100 - regenRatio;
   const gearRatio = (100 - hydraulicRatio) / totalRatio;
   gearRatioDisplay.textContent = gearRatio.toFixed(2);

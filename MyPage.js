@@ -41,12 +41,9 @@ function generateCarInfo(userInfo) {
         <div class="car-info">
           <p><strong>차량 ${i + 1} 정보:</strong></p>
           <p><strong>모델:</strong> ${carInfo.항목[0]}</p>
-          <p><strong>전비:</strong> ${carInfo.항목[1]}</p>
-          <p><strong>주행 거리:</strong> ${carInfo.항목[2]}</p>
-          <p><strong>차량 비용:</strong> ${carInfo.항목[3]}</p>
-          <p><strong>1일 기준 비용:</strong> ${carInfo.항목[4]}</p>
-          <p><strong>1년 기준 비용:</strong> ${carInfo.항목[5]}</p>
-          <p><strong>차량 사진:</strong></p> <img src="${carImage}" alt="차량 사진" width="50%">
+          <p><strong>주행 거리:</strong> ${carInfo.항목[1]}</p>
+          <p><strong>차량 비용:</strong> ${carInfo.항목[2]}</p>
+              <p><strong>차량 사진:</strong></p> <img src="${carImage}" alt="차량 사진" width="50%">
         </div>
       `;
     }

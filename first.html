@@ -12,7 +12,7 @@
       integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv"
       crossorigin="anonymous"
     />
-    <title>모델 I 홈페이지 - 시뮬레이션 배경</title>
+    <title>모델 I 홈페이지 - 시뮬레이션 개선 & 모델 I 배경</title>
   </head>
 
   <body>
@@ -21,7 +21,7 @@
         <!-- Logo Image -->
         <a href="index.html">
           <img
-            src="https://blog.kakaocdn.net/dn/cpDZ8c/btqyG77Sc1o/Q2KKUIyCWIzGQfK1fPSeok/img.jpg"
+            src="https://github.com/Yoon0221/capston/assets/108733746/d45d9416-cd2a-4493-a419-fc569b3438a7"
             alt="Logo"
             class="logo"
           />
@@ -32,16 +32,15 @@
         <nav class="gnb">
           <ul>
             <li>
-              <a href="first.html" id="resetButton">시뮬레이션 배경</a>
+              <a href="first.html" id="resetButton">시뮬레이션 개선 & 모델 I 배경</a>
               <div class="gnb_inner">
                 <ul class="depth1_list">
                   <li>
                     <ul class="depth2_list">
                       <li>
-                        <p>
-                          시뮬레이션 배경에 대한 페이지입니다.
-                          <br /><br />전기자동차의 장점과 모델 I만의 특성을 알
-                          수 있습니다.
+                        <p style="text-align: left;">
+                          기존 시뮬레이션 프로그램의 오차를 줄이는 개선방안을 소개하는 페이지입니다.
+                          <br /><br />개선한 시뮬레이션을 바탕으로 모델 I를 소개하고자 합니다.
                         </p>
                       </li>
                     </ul>
@@ -60,13 +59,15 @@
 
     <div class = "funcs">
     <main>
-<br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/>
 <section id="main-section">
-
+<h1 style="text-align: center;">< 시뮬레이션 개선점 ></h1><br/><br/><br/><br/>
   <section>
     <!-- 1. 모델 I 탄생배경 - 이론1 -->
     <div id="motorControl" class="section">
-      <h1>모터 구동 및 회생 제동 제어</h1><br/><br/>
+      <h1>구동 및 회생제동 원리</h1><br/>
+      <p>토크가 음수일 때는 회생 제동, 양수일 때는 모터 구동이 제어됩니다.
+      </p><br/><br/>
       <label for="torqueInput">토크 값 입력 :</label><br/>
       <input type="number" id="torqueInput" placeholder="토크 값을 입력하세요" /><br/>
       <button onclick="controlMotor()">제어</button>
@@ -81,17 +82,17 @@
       <h2>회생제동과 유압제동 비율 조절</h2><br/><br/>
       <label for="regenRatio">회생제동 비율:</label>
       <div class="input-container">
-        <input type="range" id="regenRatio" min="0" max="100" value="50" />
-        <span id="regenValue">50%</span>
+        <input type="range" id="regenRatio" min="0" max="100" value="80" />
+        <span id="regenValue">80%</span>
       </div>
       <br/>
       <label for="hydraulicRatio">유압제동 비율:</label>
       <div class="input-container">
-        <input type="range" id="hydraulicRatio" min="0" max="100" value="50" />
-        <span id="hydraulicValue">50%</span>
+        <input type="range" id="hydraulicRatio" min="0" max="100" value="20" />
+        <span id="hydraulicValue">20%</span>
       </div>
       <br/>
-      <div id="result">전비 값: <span id="gearRatio">1.00</span></div>
+      <div id="result">전비 상승 비율 : <span id="gearRatio">1.00</span></div>
     </div>
   </section>
 
@@ -113,7 +114,7 @@
        <!-- 4. 모델 I 탄생배경 - 이론4-->
        <section id="main - section">
         
-       <h1>모터 효율 분석 및 개선</h1><br/><br/><br/>
+       <h1> < Model I 배경 ></h1><br/><br/><br/>
 
       <h2>1. 회생 제동과 유압 제동</h2><br/>
       <p>
@@ -121,25 +122,20 @@
         에너지를 재활용하는 기술입니다. <br/>유압 제동은 유압 시스템을 이용하여
         모터의 속도를 제어하는 기술입니다. <br/>두 기술을 효율적으로 조합하면
         모터의 에너지 흐름을 최적화할 수 있습니다.
-      </p><br/><br/>
+      </p><br/><br/><br/><br/>
 
-      <h2>2. 모터 효율에 대한 분석</h2><br/>
+      <h2>2. 개선 방향 제시</h2><br/>
       <p>
-        모터 효율은 회전 에너지를 유용한 작업으로 변환하는 능력을 나타냅니다.<br/>
-        효율을 높이기 위해서는 회생 제동과 유압 제동의 비율을 조정해야 합니다.<br/>
-        불필요한 에너지 손실을 방지하고, 모터가 효과적으로 일을 수행하도록
-        최적의 환경을 조성해야 합니다.
-      </p><br/><br/>
-
-      <h2>3. 개선 방향 제시</h2><br/>
-      <p>
-        3.1 <strong>회생 제동과 유압 제동 비율 조정 <br/>  </strong>
+        2.1 <strong>회생 제동과 유압 제동 비율 조절 <br/>  </strong>
       </p>
       <p>
-        3.2 <strong>센서 및 제어 시스템 강화 <br/> </strong>
+        2.2 <strong>타이어 변경 <br/> </strong>
       </p>
       <p>
-        3.3 <strong>고효율 재생 에너지 시스템 도입 <br/> </strong> 
+        2.3 <strong>Energy Storage System 변경 <br/> </strong> 
+      </p>
+      <p>
+        2.4 <strong>모터 효율 변경 <br/> </strong> 
       </p>
       <br/>
       <p>
@@ -149,31 +145,6 @@
        </section>
 
        <br/><br/><br/><br/><br/><br/>
-
-       <!-- 5. 모델 I 탄생배경 - 이론5-->
-       <section id="main - section">
-       
-       <h2>4. 비율 변화에 따른 시뮬레이션 결과 분석</h2>
-       <div id="chart-containers">
-         <svg width="600" height="400"></svg>
-         <label for="recoveryRatio">회생제동 분배비율: </label>
-         <input
-           type="range"
-           id="recoveryRatio"
-           min="0"
-           max="100"
-           step="1"
-           value="50"
-         />
-         <p id="errorLabel">오차율: <span id="errorValue">0</span>%</p>
-       </div>
- 
-       <script src="https://d3js.org/d3.v5.min.js"></script>
-     </div>
-   </div>
-  </section>
-
-        <br/><br/><br/><br/><br/><br/>
 
         <!-- 6. 모델 I 매력-->
         <section id="main - section">
@@ -237,7 +208,7 @@
         <br /><br /><br />
         <ul class="depth1 clearfix">
           <li>
-            <em><a href="first.html">시뮬레이션 배경</a></em>
+            <em><a href="first.html">시뮬레이션 개선 & 모델 I 배경</a></em>
           </li>
           <li>
             <em><a href="second.html"><모델 I></a></em>

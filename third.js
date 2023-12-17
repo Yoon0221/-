@@ -1,17 +1,17 @@
 // 시중에서 판매중인 차량 스펙
 var carSpecs = {
-  car1: { 항목: ['테슬라', 2, 3, 4, 5, 6] },
-  car2: { 항목: ['그렇디', 12, 13, 14, 15, 16] },
-  car3: { 항목: ['ㅁㅁ', 22, 23, 24, 25, 26] },
-  car4: { 항목: ['ㄴㅇㄹ', 32, 33, 34, 35, 36] },
-  car5: { 항목: [41, 42, 43, 44, 45, 46] },
-  car6: { 항목: [51, 52, 53, 54, 55, 56] },
-  car7: { 항목: [61, 62, 63, 64, 65, 66] },
-  car8: { 항목: ['ㅇ', 72, 73, 74, 75, 76] },
+  car1: { 항목: ['테슬라 로드스터', '1000km', '20만달러 (약 2억 6500만원)'] },
+  car2: { 항목: ['라이트이어 0', '625km', '3억 4천만원'] },
+  car3: { 항목: ['피스커 오션 울트라', '610km', '5만 2999달러 (약 7119만원)'] },
+  car4: { 항목: ['테슬라 모델 X', '560km', '1억 1599만원 ~ 1억 3599만원'] },
+  car5: { 항목: ['폭스바겐 ID.3 Pro S', '548km', '3만 6960유로 (약 5천만원)'] },
+  car6: { 항목: ['테슬라 모델 3', '547km', '7034만원 ~ 9417만원'] },
+  car7: { 항목: ['아우디 Q4 e-트론', '411km', '6170만원 ~ 6870만원'] },
+  car8: { 항목: ['BMW i4 M50', '378km', '8490만원 ~ 9840만원'] },
 };
 
 // 모델 I 스펙
-var modelISpecs = { 항목: [91, 92, 93, 94, 95, 96] };
+var modelISpecs = { 항목: ['모델 I', '499.7km', '5000만원'] };
 
 // 시중에서 판매중인 차량 이미지
 var carImages = {
@@ -42,7 +42,7 @@ function loadUserInfos(num) {
 
   var userImage = document.getElementById('userImage');
 
-  userImage.src = myArray[6];
+  userImage.src = myArray[3];
 }
 
 function generateCarInfo(userInfo, num) {
@@ -53,9 +53,6 @@ function generateCarInfo(userInfo, num) {
     myArray.push(carInfo.항목[0]);
     myArray.push(carInfo.항목[1]);
     myArray.push(carInfo.항목[2]);
-    myArray.push(carInfo.항목[3]);
-    myArray.push(carInfo.항목[4]);
-    myArray.push(carInfo.항목[5]);
     myArray.push(carImage);
   }
 }

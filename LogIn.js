@@ -21,9 +21,6 @@ function signup() {
       document.getElementById(`model${i}`).value,
       document.getElementById(`maintenance${i}`).value,
       document.getElementById(`carCost${i}`).value,
-      document.getElementById(`dailyCost${i}`).value,
-      document.getElementById(`monthlyCost${i}`).value,
-      document.getElementById(`annualCost${i}`).value,
     ];
 
     UserCar[`car${i + 1}`] = { 항목: carSpec };
@@ -91,16 +88,13 @@ document.getElementById('carCount').addEventListener('input', function () {
     <br/></br/><h3>-차량 정보 입력-</h3> <br/></br/>
 <label for="model${i}">모델:</label>
 <input type="text" id="model${i}"><br>
-<label for="maintenance${i}">전비:</label>
+
+<label for="maintenance${i}">주행 거리:</label>
 <input type="text" id="maintenance${i}"><br>
-<label for="carCost${i}">주행 거리 :</label>
+
+<label for="carCost${i}">차량 비용 :</label>
 <input type="number" id="carCost${i}"><br>
-<label for="dailyCost${i}">차량 비용:</label>
-<input type="number" id="dailyCost${i}"><br>
-<label for="monthlyCost${i}">1일 기준 비용:</label>
-<input type="number" id="monthlyCost${i}"><br>
-<label for="annualCost${i}">1년 기준 비용:</label>
-<input type="number" id="annualCost${i}"><br>
+
 <label for="carImage${i}">차량 사진:</label>
 <input type="url" id="carImage${i}"><br>
 `;
